@@ -1,0 +1,50 @@
+# Compiled binary
+BankSystem
+
+# Compiled Object files
+*.o
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.bak
+*.swp
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.a
+*.lib
+
+# Debug files
+*.dSYM/
+*.exe
+*.out
+
+# IDE-specific files
+.idea/
+.vscode/
+*.code-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*.old
+*.orig
+
+# Temporary/Intermediate files
+*.temp
+*.tmp
+*.swp
+*.swo
+
+# Ignore Account_Temp.txt file
+Account_Temp.txt
+

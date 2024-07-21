@@ -1,0 +1,18 @@
+# Example Input for Bank Account Management System
+
+# Input to Open a New Account
+# Enter Account No: 123456
+# Enter A Strong Password: password123
+
+# Input to Add Cash
+# Enter Account No: 123456
+# Enter Cash: 500
+
+# Input to Withdraw Cash
+# Enter Account No: 123456
+# Enter Password: password123
+# Enter Cash: 200
+
+# Input to Check Balance
+# Enter Account No: 123456
+# Enter Password: password123

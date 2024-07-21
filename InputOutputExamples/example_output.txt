@@ -1,0 +1,21 @@
+# Example Output for Bank Account Management System
+
+# After Opening a New Account
+# Account Created Successfully!
+
+# After Adding Cash
+# Enter Account No: 123456
+# Enter Cash: 500
+# New Balance Is: 500
+
+# After Withdrawing Cash
+# Enter Account No: 123456
+# Enter Password: password123
+# Enter Cash: 200
+# Transaction Was Successful!
+# Remaining Balance: 300
+
+# After Checking Balance
+# Enter Account No: 123456
+# Enter Password: password123
+# Your Balance is: 300

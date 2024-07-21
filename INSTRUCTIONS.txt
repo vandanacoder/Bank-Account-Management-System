@@ -1,0 +1,63 @@
+# Bank Account Management System - Instructions
+
+## Overview
+
+The Bank Account Management System is a console-based application developed in C++. It allows users to create bank accounts, add cash, and withdraw funds. The application stores account details in a text file and performs operations based on user input.
+
+## Setup and Compilation
+
+### Prerequisites
+
+- C++ compiler (e.g., GCC, Visual Studio)
+- Windows OS (for functions like `system("cls")` and `Sleep`)
+
+### Compilation Instructions
+
+1. **Clone the Repository**: If you haven't already, clone the repository containing the source code.
+git clone <https://github.com/vandanacoder/Bank-Account-Management-System>
+
+2. **Compile the Code**: Use your C++ compiler to compile the source code.
+g++ main.cpp -o bank_management
+
+3. **Run the Executable**: Execute the compiled program.
+./bank_management
+
+## Usage Instructions
+
+### Menu Options
+
+1. **Open New Account**: Select option `1` to create a new bank account. You will be prompted to enter:
+- **Account No**: Unique identifier for the account.
+- **Password**: Secure password for the account.
+- **Initial Balance**: Automatically set to 0.
+
+2. **Add Cash**: Select option `2` to deposit cash into an existing account. You will need to provide:
+- **Account No**: The account number to which cash will be added.
+- **Cash Amount**: The amount of money to add to the account.
+
+3. **Withdraw Cash**: Select option `3` to withdraw cash from an account. You will need to provide:
+- **Account No**: The account number from which cash will be withdrawn.
+- **Password**: The password for the account.
+- **Cash Amount**: The amount of money to withdraw.
+
+4. **Exit**: Select option `4` to exit the application.
+
+### File Descriptions
+
+- **Account.txt**: This file stores account information in the format:
+AccountNo : Password : Balance
+
+- **D:/Account Temp.txt**: A temporary file used for processing transactions. It is created and replaced during cash addition and withdrawal operations.
+
+## Troubleshooting
+
+- **File Access Issues**: If the application reports an error opening the file, ensure that:
+- The file path is correct.
+- The file is not open in another program.
+- You have the necessary permissions to access the file.
+
+## Example Usage
+
+- **Create Account**: Select `1`, enter `12345` as the account number, `myPassword` as the password, and the balance will be set to 0.
+- **Add Cash**: Select `2`, enter `12345` as the account number, and specify the amount to add.
+- **Withdraw Cash**: Select `3`, enter `12345` as the account number, `myPassword` as the password, and specify the amount to withdraw.
