@@ -46,6 +46,7 @@ This will generate the executable file BankSystem in the build directory.
 - *Account_Temp.txt*: Temporary file used for updating account details during transactions.
 - *INSTRUCTIONS.txt*: Instructions for setting up and using the Bank Account Management System.
 - *.gitignore*: Specifies files and directories to be ignored by Git.
+- *docfile.doc*:Having all informtion about setting up and using the Bank Account Management System.
   
 ## Notes
 - Ensure 'Account.txt' is accessible and has write permissions. The application will create this file if it doesn’t exist.
