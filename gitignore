@@ -1,0 +1,26 @@
+# Compiled output
+*.o
+*.out
+*.exe
+*.obj
+
+# Temporary files created by the app
+Account_Temp.txt
+
+# Build directories
+build/
+cmake-build-*/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# MinGW / GCC
+*.a
+*.lib
