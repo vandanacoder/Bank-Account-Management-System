@@ -1,64 +1,118 @@
-# Bank Account Management System
+# 🏦 Bank Account Management System
 
-## Overview
-The Bank Account Management System is a simple console-based application implemented in C++. It allows users to perform basic banking operations including opening a new account, adding cash, withdrawing cash, and checking account balances. The system stores account information in a text file for persistence.
+A console-based bank account management application built in both **C** and **C++**, featuring file-based data storage for account persistence.
 
-## Features
-- **Open New Account**: Create a new bank account by providing an account number and a strong password.
-- **Add Cash**: Deposit cash into an existing account by specifying the account number and the amount to deposit.
-- **Withdraw Cash**: Withdraw cash from an existing account, ensuring the withdrawal amount does not exceed the available balance.
-- **Check Balance**: Display the current balance of an account after verifying the account number and password.
+---
 
-## Setup Instructions
+## 📋 Overview
 
-### Prerequisites
-- C++ compiler (e.g., g++, clang++)
-- Basic command-line knowledge
+This project is a terminal application that simulates basic banking operations. Account data is stored in a text file (`Account.txt`), making it persistent across sessions. The C++ version uses Object-Oriented Programming with a dedicated `Account` class, while the C version uses structs and procedural programming.
 
-### Compilation
+---
 
-#### Using Makefile
-1. Ensure the `Makefile` is present in your project directory.
-2. Open a terminal and navigate to the project directory.
-3. Run the following command to compile the application:
-   'make'
-- This will generate the executable file BankSystem.
-   
-#### Using CMake
-1. Ensure 'CMakeLists.txt' is present in your project directory.
-2. Create a build directory and navigate to 
-   'mkdir build'
-   'cd build'
-3. Generate the build files using CMake:
-   'cmake ..'
-4. Build the project:
-   'cmake --build .'
-This will generate the executable file BankSystem in the build directory.
+## ✨ Features
 
-#### Running the Application
-1. Navigate to the directory containing the executable ('BankSystem').
-2. Run the application with:
-  './BankSystem'
-   
-## File Structure
-- *main.cpp*: Contains the main functionality of the Bank Account Management System, including user interface and file handling.
-- *Account.txt*: Stores account details. Each line represents an account with the format: 'AccountNo : Password : Balance'.
-- *Account_Temp.txt*: Temporary file used for updating account details during transactions.
-- *INSTRUCTIONS.txt*: Instructions for setting up and using the Bank Account Management System.
-- *.gitignore*: Specifies files and directories to be ignored by Git.
-- *docfile.doc*:Having all informtion about setting up and using the Bank Account Management System.
-  
-## Notes
-- Ensure 'Account.txt' is accessible and has write permissions. The application will create this file if it doesn’t exist.
-- The system uses basic file operations for data handling and does not implement advanced security features such as encryption or database management.
-- Handle passwords and sensitive information with care.
+- **Open New Account** — Create an account with an account number and password (balance starts at 0)
+- **Add Cash** — Deposit money into an existing account by account number
+- **Withdraw Cash** — Withdraw money with password verification and insufficient funds check
+- **Check Balance** — View current balance with account number and password verification
+- **File-Based Storage** — Account data saved in `Account.txt` in the format `AccountNo : Password : Balance`
+- **Two Versions** — C version uses structs; C++ version uses OOP with a class (getters/setters)
 
-## Troubleshooting
-- *File Access Issues*: Ensure that the 'Account.txt' file is in the same directory as the executable and has appropriate read/write permissions.
-- *Compilation Errors*: Ensure that all dependencies are correctly installed and that you are using a compatible C++ compiler.
-  
-## Contributors
-Vandana: Project Creator and Developer
+---
 
-## License
-This project is licensed under the MIT License.
+## 🛠️ Built With
+
+- C (using `stdio.h`, `stdlib.h`, `string.h`, `windows.h`)
+- C++ (using `iostream`, `fstream`, `sstream`, `windows.h`)
+
+> ⚠️ **Note:** This project uses `windows.h` so it is designed to run on **Windows only**.
+
+---
+
+## 📁 Project Structure
+
+```
+Bank-Account-Management-System/
+├── Bank Account Management System.c      # C version
+├── Bank-Account_Management-System.CPP    # C++ version
+├── Account.txt                           # Stores account data
+├── InputOutputExamples/                  # Sample input/output screenshots
+├── INSTRUCTIONS.txt                      # Setup instructions
+├── CMakeLists.txt                        # CMake build file
+├── .gitignore
+├── LICENSE
+└── README.md
+```
+
+---
+
+## 🚀 How to Compile & Run
+
+### C Version
+```bash
+gcc "Bank Account Management System.c" -o BankSystem
+BankSystem.exe
+```
+
+### C++ Version
+```bash
+g++ "Bank-Account_Management-System.CPP" -o BankSystem
+BankSystem.exe
+```
+
+### Using CMake
+```bash
+mkdir build
+cd build
+cmake ..
+cmake --build .
+BankSystem.exe
+```
+
+---
+
+## 🎮 How to Use
+
+1. Run the executable
+2. Choose an option from the **Main Menu** (1–5)
+3. Follow the prompts for your chosen operation
+4. Enter `5` to exit
+
+```
+Main Menu
+---------
+1. Open New Account
+2. Add Cash
+3. Withdraw Cash
+4. Check Balance
+5. Exit
+```
+
+---
+
+## 📂 Data Storage Format
+
+Account data is stored in `Account.txt` as:
+```
+AccountNo : Password : Balance
+```
+Example:
+```
+ACC001 : mypassword123 : 5000
+```
+
+> Make sure `Account.txt` is in the same directory as the executable. It will be created automatically when the first account is opened.
+
+---
+
+## 👩‍💻 Author
+
+**Vandana**
+- GitHub: [@vandanacoder](https://github.com/vandanacoder)
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
